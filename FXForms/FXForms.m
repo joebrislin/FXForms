@@ -2047,7 +2047,7 @@ static BOOL *FXFormSetValueForKey(id<FXForm> form, id value, NSString *key)
 
 - (BOOL)canBecomeFirstResponder
 {
-    return YES;
+    return (self.field.type != FXFormFieldTypeLabel) ? YES : NO;
 }
 
 - (BOOL)becomeFirstResponder
@@ -2240,7 +2240,7 @@ static BOOL *FXFormSetValueForKey(id<FXForm> form, id value, NSString *key)
 
 - (BOOL)canBecomeFirstResponder
 {
-    return YES;
+    return (self.field.type != FXFormFieldTypeLabel) ? YES : NO;
 }
 
 - (BOOL)becomeFirstResponder
@@ -2417,7 +2417,7 @@ static BOOL *FXFormSetValueForKey(id<FXForm> form, id value, NSString *key)
 
 - (BOOL)canBecomeFirstResponder
 {
-    return YES;
+    return (self.field.type != FXFormFieldTypeLabel) ? YES : NO;
 }
 
 - (UIView *)inputView
@@ -2602,7 +2602,7 @@ static BOOL *FXFormSetValueForKey(id<FXForm> form, id value, NSString *key)
 
 - (BOOL)canBecomeFirstResponder
 {
-    return YES;
+    return (self.field.type != FXFormFieldTypeLabel) ? YES : NO;
 }
 
 - (UIView *)inputView
